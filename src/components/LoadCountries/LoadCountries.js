@@ -11,14 +11,8 @@ const LoadCountries = () => {
   return (
     <div>
       <h1>Visiting every country</h1>
-      {countries.map(({ name, latlng, population, region, area }) => (
-        <Country
-          key={latlng}
-          name={name.common}
-          population={population}
-          region={region}
-          area={area}
-        ></Country>
+      {countries.map((country) => (
+        <Country key={country.latlng} country={country}></Country>
       ))}
     </div>
   );
