@@ -14,7 +14,7 @@ const LoadCountries = () => {
       <h1>Visiting every country</h1>
       <div className="countries-container">
         {countries.map((country) => (
-          <Country key={country.latlng} country={country}></Country>
+          <Country key={country.cca3} country={country}></Country>
         ))}
       </div>
     </div>
